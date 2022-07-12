@@ -1,16 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { PostCard, PostWidget, Categories } from "../components";
 import { getPosts } from "../../services";
 
 const Home: NextPage = ({ posts }: any) => {
-  console.log(posts);
+  // console.log(posts);
   return (
     <div className="container mx-auto px-10 mb-8">
-      <Head>
-        <title>MASKA BLOG</title>
-      </Head>
-      <div className="grid grid-col-1 lg:grid-col-12 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post: any, index: number) => (
             <PostCard
