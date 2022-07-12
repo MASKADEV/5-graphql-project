@@ -2,6 +2,8 @@
   <div></div>
 </template>
 <script>
-export default {};
+export default {
+  name: "FormTwo",
+};
 </script>
 <style lang=""></style>
